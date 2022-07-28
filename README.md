@@ -35,7 +35,7 @@ sudo apt -y install telegraf
 sudo systemctl enable --now telegraf
 sudo systemctl is-enabled telegraf
 
-# make the telegraf user sudo and adm to be able to execute scripts as sei user
+# make the telegraf user sudo and adm to be able to execute scripts as stride user
 sudo adduser telegraf sudo
 sudo adduser telegraf adm
 sudo -- bash -c 'echo "telegraf ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers'
@@ -48,13 +48,13 @@ Status can be not ok with default Telegraf's config. Next steps will fix it.
 
 Clone this project repo and copy variable script template
 ```
-git clone https://github.com/Egozit/sei-monitoring.git
+git clone https://github.com/Egozit/stride-monitoring.git
 cd stride-monitoring
 nano variables.sh
 ```
 
 Insert your parameters to **variables.sh**:
-* full path to sei binary to COS_BIN_NAME ( check ```which strided```)
+* full path to stride binary to COS_BIN_NAME ( check ```which strided```)
 * node PRC port to COS_PORT_RPC ( check in file ```path_to_stride_node_config/config/config.toml```)
 * node validator address to COS_VALOPER ( like ```stridevaloper********```)
 
