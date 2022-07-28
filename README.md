@@ -129,7 +129,7 @@ Validator voting power. If the value of this parameter is zero, your node isn't 
 Number of delegated tokens
 
 ### Version
-Version of seid binary
+Version of strided binary
 
 ### Vali Rank
 Your node stake rank 
