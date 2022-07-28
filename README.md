@@ -13,7 +13,7 @@ Advantages  of using our free service:
 
 # One line installation:
 ```
-. <(wget -qO- https://raw.githubusercontent.com/Egozit/sei-monitoring/main/sei-monitoring-install.sh)
+. <(wget -qO- https://raw.githubusercontent.com/Egozit/stride-monitoring/main/stride_monitoring_install.sh)
 ```
 
 # OR Manual installation of telegraf and monitoring script
