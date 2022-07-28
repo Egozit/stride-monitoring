@@ -31,7 +31,7 @@ health=0
         let "time_since_block = $(date +"%s") - $(date -d "$latest_block_time" +"%s")"
         latest_block_time=$(date -d "$latest_block_time" +"%s")
         # check time
-        if [ $time_since_block -gt 30 ]; then health=4; fi
+        if [ $time_since_block -gt 120 ]; then health=4; fi
 
         # Get catchup status
         catching_up=$(jq -r '.result.sync_info.catching_up' <<<$status)
